@@ -26,10 +26,11 @@ void setup() {
 void loop() {
   //for
 
-  for (int x=0;x<=90;x++){
-    serv1.write(x); //Base se move de 0º a 90º
-    delay(50)
+  for (int x=0;x<=10;x++){
+    serv1.write(75+10*pow(x,2)-2.222*pow(x,3));
+    
+
   }
-  
-  
+  Serial.println("**********************************************");
+   Serial.print(serv1.write); 
 }
