@@ -26,7 +26,7 @@ void setup() {
 void loop() {
   //for
 
-  for (int x=0;x<=10;x++){
+  for (int x=0;x<=10;x++){   //a variavel x representa o tempo
     serv1.write(75+10*pow(x,2)-2.222*pow(x,3));    //Polinômio de 3 grau para a posição angular da base
 
   }
